@@ -1,6 +1,13 @@
+<script>
+    export let title = "Book a Free Call"
+    export let link
+</script>
+
 
 <button>
-    Book a Free Call
+    <a href="{link}">
+        {title}
+    </a>
 </button>
 
 
@@ -21,5 +28,9 @@
         background: linear-gradient(180deg, rgb(20, 208, 241), rgb(81, 56, 194));
         transform: scale(1.05);
         box-shadow: -1px -1px 2px white, 1px 1px 2px black, 0 4px 50px rgba(0, 0, 0, 0.329);
+    }
+
+    a {
+        color: white;
     }
 </style>

@@ -41,7 +41,9 @@
 <style>
     header {
         background: white;
+        padding: 0 1em;
         margin-bottom: 2em;
+        box-shadow: 0 5px 20px rgba(255, 255, 255, 0.164);
     }
 
     .container {
