@@ -21,6 +21,16 @@
 
 
 <style>
+    @media screen and (max-width: 950px) {
+        h1 {
+            font-size: 2.5em !important;
+        }
+
+        p {
+            font-size: 1.8em !important;
+        }
+    }
+
     section {
         position: relative;
     }
@@ -56,5 +66,6 @@
         color: white;
         font-size: 2em;
         font-weight: normal;
+        margin-bottom: 2rem;
     }
 </style>

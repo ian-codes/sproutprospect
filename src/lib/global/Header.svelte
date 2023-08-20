@@ -1,6 +1,12 @@
 <script>
     import { base } from "$app/paths";
     import Incentive from "./Incentive.svelte";
+
+    let isOpen = false
+
+    function handleClick() {
+        isOpen = !isOpen
+    }
 </script>
 
 
@@ -10,8 +16,16 @@
         class="logo">
         </div>
 
+
+
         <nav>
-            <ol>
+            <div on:click={handleClick} class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ol style="display: {isOpen ? "flex" : "none"}">
                 <li>
                     <Incentive />
                 </li>
@@ -39,6 +53,65 @@
 </header>
 
 <style>
+    @media screen and (max-width: 950px) {
+        .logo {
+            margin: .5em 0 !important;
+        }
+
+
+        nav {
+            position: relative;
+        }
+
+        .burger {
+            display: flex !important;
+        }
+
+        ol {
+            flex-direction: column !important;
+            position: absolute;
+            top: 4em;
+            right: 0;
+            background: white;
+            padding: .5em;
+            z-index: 10;
+            width: max-content;
+            border-radius: 1em;
+            box-shadow: 0 10px 20px black;
+        }
+
+        a:hover {
+            background: lightgray;
+        }
+
+        a::after {
+            display: none;
+        }
+    }
+
+
+    .burger {
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        transition: all .1s ease;
+        padding: .5em;
+    }
+
+    .burger:hover {
+        box-shadow: 0 0 5px inset black;
+    }
+
+    .burger span {
+        background: black;
+        width: 100%;
+        height: 3px;
+        border-radius: 5px;
+    }
+
     header {
         background: white;
         padding: 0 1em;
