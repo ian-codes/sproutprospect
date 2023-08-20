@@ -1,10 +1,11 @@
 <script>
+    import { base } from "$app/paths";
     import Incentive from "../lib/global/Incentive.svelte";
 
 </script>
 
 <section>
-    <div class="bg"></div>
+    <div style="background-image: url('{base}/bg2.jpg')" class="bg"></div>
 
     <h1>
         Landscaping Client Acqusition Has Never Been Simpler.
@@ -27,7 +28,6 @@
     .bg {
         position: fixed;
         inset: 0;
-        background: url("bg2.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

@@ -17,19 +17,19 @@
                 </li>
     
                 <li>
-                    <a href="how-it-works">
+                    <a href="#">
                         How it Works
                     </a>
                 </li>
         
                 <li>
-                    <a href="guarantee">
+                    <a href="#">
                         Our Guarantee
                     </a>
                 </li>
         
                 <li>
-                    <a href="contact">
+                    <a href="#">
                         Contact Us
                     </a>
                 </li>
