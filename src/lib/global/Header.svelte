@@ -16,8 +16,6 @@
         class="logo">
         </div>
 
-
-
         <nav>
             <div on:click={handleClick} class="burger">
                 <span></span>
@@ -25,7 +23,7 @@
                 <span></span>
             </div>
 
-            <ol style="display: {isOpen ? "flex" : "none"}">
+            <ol class="{isOpen ? "open" : "closed"}">
                 <li>
                     <Incentive />
                 </li>
@@ -58,7 +56,6 @@
             margin: .5em 0 !important;
         }
 
-
         nav {
             position: relative;
         }
@@ -67,7 +64,16 @@
             display: flex !important;
         }
 
+        .open {
+            display: flex;
+        }
+
+        .closed {
+            display: none;
+        }
+
         ol {
+            display: none;
             flex-direction: column !important;
             position: absolute;
             top: 4em;
