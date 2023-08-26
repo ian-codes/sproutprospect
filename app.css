@@ -12,6 +12,7 @@ html {
 }
 
 body {
+    position: relative;
     font-family: "Sen", Helvetica, sans-serif;
     margin: 0;
     padding: 0;
