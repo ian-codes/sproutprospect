@@ -1,10 +1,17 @@
 <script>
     export let title = "Book a Free Call"
     export let link
+
+    import { isOpen } from "../schedule/schedulePopupState";
+
+
+    function handleClick() {
+        isOpen.update((value) =>  !value)
+    }
 </script>
 
 
-<button>
+<button on:click={handleClick}>
     <a href="{link}">
         {title}
     </a>

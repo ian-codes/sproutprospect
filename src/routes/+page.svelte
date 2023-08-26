@@ -1,7 +1,6 @@
 <script>
     import { base } from "$app/paths";
     import Incentive from "../lib/global/Incentive.svelte";
-
 </script>
 
 <section>
@@ -15,9 +14,8 @@
         We help landscaping businesses optimize & automate their client acquisition using the power of our Digital Sprouting© solution.
     </p>
 
-    <Incentive title="Learn More" />
+    <Incentive title="Book a free call" />
 </section>
-
 
 
 <style>

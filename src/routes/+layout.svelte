@@ -1,12 +1,14 @@
 <script>
-    import { base } from "$app/paths";
     import Header from "../lib/global/Header.svelte";
+    import Schedule from "../lib/schedule/Schedule.svelte";
 
 </script>
 
 
 
 <Header />
+
+<Schedule />
 
 <main>
     <slot>
